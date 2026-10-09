@@ -1,15 +1,15 @@
 <tr>
   <td>
-    {{header.name}} <br>
-    {{header.goalLife}}
+    {{header?.name}} <br>
+    {{header?.goalLife}}
   </td>
   <td>
-    <img src="{{header.photoUrl}}" with= '200' height= '200'>
+    <img [src]="header?.photoUrl || 'foto.jpg'" width="200" height="200" alt="Foto de perfil">
   </td>
   <td>
-    {{header.email}}<br>
-    {{header.phoneNumber}}<br>
-    {{header.location}}<br>
-    {{header.socialNetwork}}
-</td>
+    {{header?.email}}<br>
+    {{header?.phoneNumber}}<br>
+    {{header?.location}}<br>
+    {{header?.socialNetwork}}
+  </td>
 </tr>
